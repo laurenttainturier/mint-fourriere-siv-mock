@@ -15,4 +15,4 @@ RUN pip3 install -r requirements.txt
 EXPOSE 80
 
 # Run the command
-CMD gunicorn -b 0.0.0.0:80 app:app
+CMD gunicorn -b 0.0.0.0:80 --log-level=debug app:app

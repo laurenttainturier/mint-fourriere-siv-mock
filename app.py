@@ -1,6 +1,10 @@
+import logging
 from flask import Flask, Response
 
 app = Flask(__name__)
+gunicorn_logger = logging.getLogger('gunicorn.error')
+app.logger.handlers = gunicorn_logger.handlers
+app.logger.setLevel(gunicorn_logger.level)
 
 KO_BODY = """
 <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><siv:rep_consulter_dossier xmlns:siv="http://siv.mi.fr/DefinitionsServices/2007-06">
@@ -177,4 +181,4 @@ def error():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=80, debug=True)
