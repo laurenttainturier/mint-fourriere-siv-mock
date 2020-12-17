@@ -6,8 +6,7 @@ gunicorn_logger = logging.getLogger('gunicorn.error')
 app.logger.handlers = gunicorn_logger.handlers
 app.logger.setLevel(gunicorn_logger.level)
 
-KO_BODY = """
-<?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><siv:rep_consulter_dossier xmlns:siv="http://siv.mi.fr/DefinitionsServices/2007-06">
+KO_BODY = """<?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><siv:rep_consulter_dossier xmlns:siv="http://siv.mi.fr/DefinitionsServices/2007-06">
 <siv:control>
 <siv:code_partenaire>127344</siv:code_partenaire>
 <siv:code_miat>QSIV</siv:code_miat>
