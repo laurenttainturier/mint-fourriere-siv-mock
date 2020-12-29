@@ -27,7 +27,8 @@ def error():
         immatriculation='AA-001-AA',
         vin='ZAR93700005138320')
 
-    return render_template('consultation_ko_response', date_reception=date_reception, dossier=dossier)
+    return render_template('consultation_ko_response', date_reception=date_reception, dossier=dossier), 200, {
+        'Content-Type': "text/xml; charset=utf-8"}
 
 
 if __name__ == '__main__':
