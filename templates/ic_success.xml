@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <siv:rep_declaration_expert xmlns:siv="http://siv.mi.fr/DefinitionsServices/2007-06">
+            <siv:control>
+                <siv:code_partenaire>128484</siv:code_partenaire>
+                <siv:code_miat>QSIV</siv:code_miat>
+                <siv:date_envoi>2021-01-11T16:10:57+01:00</siv:date_envoi>
+                <siv:type_operation>declaration</siv:type_operation>
+                <siv:numero_session>d3080ca6-c563-4df4-b8f1-fc4e3997920d</siv:numero_session>
+                <siv:code_traitement>0</siv:code_traitement>
+                <siv:code_operation>1850192</siv:code_operation>
+                <siv:date_reception>2021-01-11T16:10:58+01:00</siv:date_reception>
+            </siv:control>
+            <siv:liste_dossiers>
+                <siv:dossier>
+                    <siv:date_expertise>2021-01-11</siv:date_expertise>
+                    <siv:numero_immat>{{ dossier.immatriculation }}</siv:numero_immat>
+                    <siv:num_dossier>{{ dossier.numero }}</siv:num_dossier>
+                </siv:dossier>
+            </siv:liste_dossiers>
+        </siv:rep_declaration_expert>
+    </soapenv:Body>
+</soapenv:Envelope>
+

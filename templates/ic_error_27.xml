@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <siv:rep_declaration_expert xmlns:siv="http://siv.mi.fr/DefinitionsServices/2007-06">
+            <siv:control>
+                <siv:code_partenaire>128484</siv:code_partenaire>
+                <siv:code_miat>QSIV</siv:code_miat>
+                <siv:date_envoi>2021-01-11T17:02:31+01:00</siv:date_envoi>
+                <siv:type_operation>declaration</siv:type_operation>
+                <siv:numero_session>f0d43249-cd4e-4752-8e18-1d6ecdc04f9f</siv:numero_session>
+                <siv:code_traitement>1</siv:code_traitement>
+                <siv:code_erreur>27</siv:code_erreur>
+                <siv:description_erreur>
+                    <siv:item_erreur>
+                        <siv:message_erreur>Inscription de déclaration ou des conclusions d'un 1er rapport impossible
+                            car existence d'une suspension pour motif ' véhicule endommagé ' sauf s'il s'agit d'une
+                            suspension VE initiée par les forces de l'ordre
+                        </siv:message_erreur>
+                    </siv:item_erreur>
+                </siv:description_erreur>
+                <siv:code_operation>1850218</siv:code_operation>
+                <siv:date_reception>2021-01-11T17:02:32+01:00</siv:date_reception>
+            </siv:control>
+        </siv:rep_declaration_expert>
+    </soapenv:Body>
+</soapenv:Envelope>

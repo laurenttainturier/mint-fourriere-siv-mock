@@ -1,0 +1,115 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+                       actor="" mustUnderstand="1">
+            <saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+                            ID="_f0d43249-cd4e-4752-8e18-1d6ecdc04f9f" IssueInstant="2021-01-11T16:02:31.404473Z"
+                            Version="2.0">
+                <saml:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">IDP_SI_FOURRIERE_1</saml:Issuer>
+                <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:SignedInfo>
+                        <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                        <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+                        <ds:Reference URI="#_f0d43249-cd4e-4752-8e18-1d6ecdc04f9f">
+                            <ds:Transforms>
+                                <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                                <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                            </ds:Transforms>
+                            <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                            <ds:DigestValue>QCtsbtTKRUBZNPzymS9uWzfYFMBrngQqYs050inj0TM=</ds:DigestValue>
+                        </ds:Reference>
+                    </ds:SignedInfo>
+                    <ds:SignatureValue>iisagy9uke8nnCxQSLKulPhS8oW3vqitoV22DcdEY/sKLGDD94+uoUfxzLWuXD4KFUYEOvZG1qiT&#13;
+                        UgtK8v5FpYzTUpe+tTybyvHs58LwIwIfHwJbftHqzBGvfqeUHK/RjZlbjH8cjYIDLGBAjN6Vk/DC&#13;
+                        mKE9GHdS/l1ZEs/+kSyzCbR9DtLhPQxLcY+cTDoiTI7gomNk5pd33beiA+2Hpe9jMrP0sk1Mm2ME&#13;
+                        jfqFcMSqvsm/Tnuq5ON8y30/BuO059dit1QFej/6OgLaVVzi29goa9E4+Yg0J1r240+VoOelueLt&#13;
+                        85UJXqWH9K9sBiJZAXQsqJOQDZaiZ6Qn+2lUOg==
+                    </ds:SignatureValue>
+                    <ds:KeyInfo>
+                        <ds:X509Data>
+                            <ds:X509Certificate>
+                                MIIGAjCCA+qgAwIBAgIQOzYDtmeTmNeEJY142RwpczANBgkqhkiG9w0BAQsFADBaMQswCQYDVQQG&#13;
+                                EwJGUjETMBEGA1UEChMKQ2VydGlub21pczEXMBUGA1UECxMOMDAwMiA0MzM5OTg5MDMxHTAbBgNV&#13;
+                                BAMTFENlcnRpbm9taXMgLSBFYXN5IENBMB4XDTE5MDMwMTA5MTUwMFoXDTIyMDIyODA5MTUwMFow&#13;
+                                gaoxCzAJBgNVBAYTAkZSMRQwEgYDVQQKDAtQT0xZQ09OU0VJTDEYMBYGA1UEYQwPTlRSRlItMzUy&#13;
+                                ODU1OTkzMRcwFQYDVQQLDA4wMDAyIDM1Mjg1NTk5MzEOMAwGA1UEBAwFVEFJRUIxEjAQBgNVBCoM&#13;
+                                CURvbWluaXF1ZTEUMBIGA1UEBRMLNTY0MzFFRUg3MDcxGDAWBgNVBAMMD0RvbWluaXF1ZSBUQUlF&#13;
+                                QjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKEslXB49V13qjC+I2IY8T8B2lwxy23V&#13;
+                                /rRMm2yojd3ijovJGJkmtOCrnIwjgK1kgXT4mjQ5AUHP78OKyBK+GTh6Cizw6TxqL7S+VMXfCZIa&#13;
+                                YT/UxYzGuVfe1/ueBzUNfU1VO8YkrM5gqTedoDpzK2vc1Xa2oHmHTHVOZYoSgnB+o3NxfPYGh3hp&#13;
+                                UIZJcadLL5gyY+Ah/fRxAD8mXtAVRuNwwxqSp3xaMmflaVPlAJDfqMIraQPwbshU7+ZoumxdoBO6&#13;
+                                huPHRs6azeDmahWTM/a9GG1kry9H4DNRJeVRbWQCl3ieJhNSSB3aCpIasi/c+9a0pMlxqEHuh85Y&#13;
+                                d1LhyHECAwEAAaOCAXEwggFtMHYGCCsGAQUFBwEBBGowaDA6BggrBgEFBQcwAoYuaHR0cDovL3d3&#13;
+                                dy5jZXJ0aW5vbWlzLmZyL3B1YmxpL2Nlci9BQ19FQVNZLmNlcjAqBggrBgEFBQcwAYYeaHR0cDov&#13;
+                                L29jc3AtcGtpLmNlcnRpbm9taXMuY29tMB0GA1UdDgQWBBSLehQjlrDiLdIrjiGGskv+VaSThjAM&#13;
+                                BgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFCzF4yAvqwoR1vc611F49GyPsQBZMBcGA1UdIAQQMA4w&#13;
+                                DAYKKoF6AVYCAwEKATA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vd3d3LmNlcnRpbm9taXMuY29t&#13;
+                                L2NybC9hY2czLUVBU1kuY3JsMA4GA1UdDwEB/wQEAwIGwDAdBgNVHSUEFjAUBggrBgEFBQcDAgYI&#13;
+                                KwYBBQUHAwQwHwYDVR0RBBgwFoEUdGVmcHNAcG9seWNvbnNlaWwuZnIwDQYJKoZIhvcNAQELBQAD&#13;
+                                ggIBABK5AEElXFlJ6cFrlvTau0RZCZdbDV0p5wXLML77P3w47TDi5d5LOTueQMP1PqjA4pvBQEE/&#13;
+                                SomBzBW5/d3tQltMK5di08HO87hjzHa+PPKvmIfP0HOPDuUZ3F4z0mwfJe9aROtrKbWCeskub8ut&#13;
+                                5cCuogXXugSlJYLTsbb5NlegeBWgutBc+ZqQpmiLY6YDrQrjviPUp/8jG289a78HM4nHxKDYSKQF&#13;
+                                xK7veiy7USU5KbyGzR2c16JISdFTZAppsnsIbG+voxwVCnQxZtSuqRVkmspuU4zNq0fiV5zpGFNV&#13;
+                                vJ5QRv8/mgXNA5+9C6Dds0PZ70vBNDGOzgZf0d6gpjLURFXu3kMQY4zNHAmcTUFvUgf4Zv10RjxO&#13;
+                                bveqQ3PKDvOaCEh5ABfP7KzFtv9gEWIqlxiNeGHFPuKaQD2piRnSZijDKQix7fxjWBxyfe0wvPeZ&#13;
+                                MXgog8dNiJamdVgownug8QCEbJSMHwOUhLBDpbdIEjOlc0ZCA+r95ELG3/CuYI6H/iafVp2VhiTT&#13;
+                                WEzCoJxb+Cja0nlKtvyu43Q+hDqh7i5b5qcdKaSPlJ0PdbwSkHnFSx9rlSnsWjFXmYastt6lfcef&#13;
+                                8XydGkah1DY4sU8RzKswgvOXG8yb0QNYcKdE1NxEXLK9d+76F62QiZ4yBBw2MJsfY5VLp+AwUGjC&#13;
+                                yQwc
+                            </ds:X509Certificate>
+                        </ds:X509Data>
+                    </ds:KeyInfo>
+                </ds:Signature>
+                <saml:Subject>
+                    <saml:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:unspecified">IDP_SI_FOURRIERE_1
+                    </saml:NameID>
+                    <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:sender-vouches"/>
+                </saml:Subject>
+                <saml:Conditions NotBefore="2021-01-11T16:02:31.404473Z" NotOnOrAfter="2021-01-11T16:12:31.404473Z"/>
+                <saml:AuthnStatement AuthnInstant="2021-01-11T16:02:31.404473Z">
+                    <saml:AuthnContext>
+                        <saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:XMLDSig
+                        </saml:AuthnContextClassRef>
+                    </saml:AuthnContext>
+                </saml:AuthnStatement>
+                <saml:AttributeStatement>
+                    <saml:Attribute Name="CodePartenaire"
+                                    NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+                        <saml:AttributeValue>128424</saml:AttributeValue>
+                    </saml:Attribute>
+                </saml:AttributeStatement>
+            </saml:Assertion>
+        </wsse:Security>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns2:req_declaration_expert xmlns:ns2="http://siv.mi.fr/DefinitionsServices/2007-06">
+            <ns2:control>
+                <ns2:code_partenaire>128484</ns2:code_partenaire>
+                <ns2:code_miat>QSIV</ns2:code_miat>
+                <ns2:type_operation>declaration</ns2:type_operation>
+                <ns2:numero_session>f0d43249-cd4e-4752-8e18-1d6ecdc04f9f</ns2:numero_session>
+                <ns2:date_envoi>2021-01-11T17:02:31.397882</ns2:date_envoi>
+            </ns2:control>
+            <ns2:declaration_expert>
+                <ns2:expert>
+                    <ns2:nom_naissance>DSR-FOURIERE</ns2:nom_naissance>
+                    <ns2:prenom>BEA-BNIV</ns2:prenom>
+                    <ns2:num_agrement_expert>999999-VE</ns2:num_agrement_expert>
+                </ns2:expert>
+                <ns2:expertise>
+                    <ns2:numero_dossier>J30NXSDYH7SRRMC</ns2:numero_dossier>
+                    <ns2:date_etablissement>2021-01-11</ns2:date_etablissement>
+                    <ns2:date_examen>2021-01-11</ns2:date_examen>
+                    <ns2:date_envoi>2021-01-11T17:02:31.40196</ns2:date_envoi>
+                    <ns2:dangereux>oui</ns2:dangereux>
+                    <ns2:reparable>non</ns2:reparable>
+                </ns2:expertise>
+                <ns2:presence_certificat>non</ns2:presence_certificat>
+                <ns2:vehicule_expertise>
+                    <ns2:numero_immatriculation>ZA-738-DQ</ns2:numero_immatriculation>
+                    <ns2:numero_vin>UU15SDKJC56823958</ns2:numero_vin>
+                </ns2:vehicule_expertise>
+            </ns2:declaration_expert>
+        </ns2:req_declaration_expert>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

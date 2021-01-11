@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <siv:rep_declaration_expert xmlns:siv="http://siv.mi.fr/DefinitionsServices/2007-06">
+            <siv:control>
+                <siv:code_partenaire>128484</siv:code_partenaire>
+                <siv:code_miat>QSIV</siv:code_miat>
+                <siv:date_envoi>2021-01-11T16:07:37+01:00</siv:date_envoi>
+                <siv:type_operation>declaration</siv:type_operation>
+                <siv:numero_session>827027b0-9153-4a25-85d5-87e07dbc0abd</siv:numero_session>
+                <siv:code_traitement>1</siv:code_traitement>
+                <siv:code_erreur>26</siv:code_erreur>
+                <siv:description_erreur>
+                    <siv:item_erreur>
+                        <siv:message_erreur>La situation administrative du véhicule ne permet pas l'opération
+                        </siv:message_erreur>
+                    </siv:item_erreur>
+                </siv:description_erreur>
+                <siv:code_operation>1850189</siv:code_operation>
+                <siv:date_reception>2021-01-11T16:07:38+01:00</siv:date_reception>
+            </siv:control>
+        </siv:rep_declaration_expert>
+    </soapenv:Body>
+</soapenv:Envelope>
